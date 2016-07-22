@@ -47,9 +47,9 @@ LIBS="-lm" python setup.py build_static
 python setup.py install
 ln -s $JQLITE/bin/sqlite3 $JQLITE/sqlite
 
-# 4. COPY PYSQLITE BINARY
-# Additional, you must copy builded pysqlite2 files(*.py, _sqlite.so) into system pysqlite2 directory.
-# NOTE: If you installed Python 2.6 on your machine, set lib.linux-x86_64-2.6 instead of lib.linux-x86_64-2.7 for the path.
+4. COPY PYSQLITE BINARY
+Additional, you must copy builded pysqlite2 files(*.py, _sqlite.so) into system pysqlite2 directory.
+NOTE: If you installed Python 2.6 on your machine, set lib.linux-x86_64-2.6 instead of lib.linux-x86_64-2.7 for the path.
 
 cp -rf $JQLITE/pysqlite/build/lib.linux-x86_64-2.7/pysqlite2/* /usr/share/pyshared/pysqlite2/
 cp -rf $JQLITE/pysqlite/build/lib.linux-x86_64-2.7/pysqlite2/* /usr/local/lib/python2.7/dist-packages/sqlalchemy/dialects/sqlite/
