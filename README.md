@@ -1,7 +1,7 @@
 # sqlite3
 
 Install Guide to add SQLITE3 version 3.9.0 to python2.6 on Linux.
-
+This SQLITE3 library include FTS5 module.
 
 1.GETTING STARTED
 
